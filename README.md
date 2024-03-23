@@ -27,5 +27,7 @@ for page_id, page_dict in data['_via_img_metadata'].items():
 
 Notice that this dataset annotates the same images as [GT4HistCommentLayout](https://github.com/AjaxMultiCommentary/GT-commentaries-layout), so that images can be retrieved from there. This being said, copyrighted images are not included. 
 
+Notice that a balanced version of this dataset is also available, where lines are balanced across commentaries with a maximum of 40 pages and a minimum of 35 pages per commentaries. This is useful for training purposes, as it avoids biases towards commentaries with more lines. The balanced version is available in the file `GT-commentaries-lines-balanced.json`. It was generated using `ajmc.olr.line_detection.data_processing.balance_dataset` from the [ajmc](https://github.com/ajaxMultiCommentary/ajmc) package. 
+
 
 
